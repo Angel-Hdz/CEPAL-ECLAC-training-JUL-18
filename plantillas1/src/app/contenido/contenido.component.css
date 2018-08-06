@@ -1,0 +1,17 @@
+.activo{
+    background: green;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.desactivado{
+
+    background: red;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    width: 300px;
+
+}

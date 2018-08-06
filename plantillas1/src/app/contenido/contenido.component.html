@@ -1,0 +1,50 @@
+<div> 
+
+  
+ <!-- Bloque A-->
+  <div *ngIf="pasteles" > 
+    <p> Aqui encuentras la mejor pastelería  del mundo </p>
+
+    <h2>Menu de Pasteles</h2>
+
+    <ul>
+      <li>Pastel de choclo</li>
+      <li>Pastel de lucuma</li>
+      <li>Pastel de banana</li>
+    </ul>
+  </div>
+
+
+   <!-- Bloque B-->
+  <div  *ngIf="cafe" >
+    <p> Aqui encuentras los mejores cafés  del mundo </p>
+
+    <h2>Menu de Cafes</h2>
+
+    <ul>
+      <li>capuccino</li>
+      <li>latte</li>
+      <li>espresso</li>
+    </ul>
+  </div>
+
+
+  <div [ngClass]="{'activo': sopaipillas , 'desactivado' : !sopaipillas  }"  >
+
+    <h2> Menu de Sopaipilla </h2>
+    <ul>
+      <li>sopaipillas pasadas</li>
+      <li> sopaipillas con mostaza </li>
+      <li> sopaipillas con chancaca </li>
+    </ul>
+
+  </div>
+
+ <div>
+   <button (click)="pasteles=!pasteles"> Pasteles </button>
+   <button (click)="cafe= false"> Cafes </button>
+
+   <button (click)="sopaipillas=!sopaipillas"> Sopaipillas </button>
+ </div>
+
+</div>

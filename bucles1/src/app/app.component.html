@@ -1,0 +1,65 @@
+<div class="container">
+
+    <div class="row">
+
+       <div class="col-4-md col-12-sm">
+          <h1>
+              Poblacion Mundial</h1>
+            <div *ngFor="let poblacionPais of poblacionMundial ">
+            
+            
+              <p>Nombre De Pais: {{poblacionPais.nombreDePais}} </p>
+            
+              <p>Poblacion General:  {{poblacionPais.poblacionGeneral}} </p>
+            
+            
+              <p class="text-primary"> Poblacion por Sexo:    
+                <span> Hombres: {{poblacionPais.poblacionPorSexo.hombres}}  </span>
+                <span> Mujeres: {{poblacionPais.poblacionPorSexo.mujeres}}  </span>
+              </p>
+            
+              <p *ngIf= "poblacionPais.exportacionCobre" >Exportacion de Cobre : {{poblacionPais.exportacionCobre}} </p>
+            
+              <p>Exportacion de Cobre : 
+                
+                <span *ngIf= "!poblacionPais.exportacionCobre"> --- </span>
+                <span *ngIf= "poblacionPais.exportacionCobre"> {{poblacionPais.exportacionCobre}} </span>
+                <span> {{ calculoPoblacion( poblacionPais)  }} </span>
+              </p>
+             
+            
+            </div>
+            
+       </div>
+          
+        <div class="col-4-md col-12-sm">
+            <h1> Lista de paises (SIMPLE )</h1>
+          <ul>
+            <li *ngFor="let item of paises">
+              {{item}}
+            </li>
+          
+          </ul>
+        </div>
+          
+          
+        <div class="col-4-md col-12-sm">
+            <h1> Lista de paises2</h1>
+          <ul>
+            <li *ngFor="let item of paisesMultidimensional ">
+          
+              <p *ngFor="let paisEspecifico of item">
+          
+                {{paisEspecifico}}
+              </p>
+          
+            </li>
+          
+          </ul>
+
+        </div>
+          
+
+    </div>
+
+</div>
