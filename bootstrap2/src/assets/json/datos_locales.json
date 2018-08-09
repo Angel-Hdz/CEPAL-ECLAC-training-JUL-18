@@ -1,0 +1,43 @@
+[
+    {
+        "type": "COMMODITIES",
+        "freq": "MONTHLY",
+        "px": "HS",
+        "r": "76",
+        "rDesc": "Brazil",
+        "ps": "201607",
+        "TotalRecords": 126827,
+        "IsOriginal": 1,
+        "IsPartnerDetail": 1,
+        "UploadTime": "2016-08-05T00:00:00",
+        "imageurl":"http://cdn.shopify.com/s/files/1/0378/3065/products/Medium_Roasted_Coffee_Bean_ArabicaR_1024x1024_45e66ead-5580-40fc-a02a-956d462a626e_grande.jpg?v=1438925402"
+    },
+    {
+        "type": "COMMODITIES",
+        "freq": "MONTHLY",
+        "px": "HS",
+        "r": "579",
+        "rDesc": "Norway",
+        "ps": "201607",
+        "TotalRecords": 110618,
+        "IsOriginal": 1,
+        "IsPartnerDetail": 1,
+        "UploadTime": "2016-08-30T00:00:00",
+        "imageurl":"https://s3.amazonaws.com/ah.cms/images/banner-traditional-foods-of-norway.jpg"
+  
+    },
+    {
+        "type": "COMMODITIES",
+        "freq": "MONTHLY",
+        "px": "HS",
+        "r": "12",
+        "rDesc": "China",
+        "ps": "201607",
+        "TotalRecords": 100,
+        "IsOriginal": 1,
+        "IsPartnerDetail": 1,
+        "UploadTime": "2016-08-30T00:00:00",
+        "imageurl":"https://static1.squarespace.com/static/56a1a14b05caa7ee9f26f47d/t/56e9e2ed45bf21d09783f8d7/1458168625895"
+  
+    }
+]

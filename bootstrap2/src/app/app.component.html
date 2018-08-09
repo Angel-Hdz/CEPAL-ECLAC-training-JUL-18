@@ -1,0 +1,29 @@
+<div class="container">
+
+   <div class="row">
+
+    <div class="col-3 sidebar"  >
+      <div *ngFor="let dato of datosImportados">
+        <a href="#" class="btn btn-secondary" (click)="mostrarDatosEnCard(dato)"  >Mostrar {{dato.rDesc}}</a>
+      </div>
+     <!--
+        <a href="#" class="btn btn-success" (click)="mostrarDatosEnCard()" >Go somewhere</a>
+      <a href="#" class="btn btn-danger" (click)="mostrarDatosEnCard()" >Go somewhere</a>
+     -->
+    </div>
+
+    <div class=" col-9 card" *ngIf="item && item.rDesc" >
+      <img class="card-img-top img-fluid"  [src]="item.imageurl" alt="Card image cap">
+      
+       
+      <div class="card-body">
+        <h5 class="card-title">{{item.rDesc}}</h5>
+        <p class="card-text">{{item.UploadTime | date}}</p>
+        
+      </div>
+
+    </div>
+
+   </div>
+
+</div>
